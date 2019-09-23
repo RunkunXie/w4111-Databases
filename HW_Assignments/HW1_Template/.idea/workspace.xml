@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b5e93ea-ead3-4609-b174-98a8e3015eaa" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../.idea/w4111-Databases.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/w4111-Databases.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSVDataTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSVDataTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RDBDataTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/RDBDataTable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dbutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dbutils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/load_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/load_csv.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/csv_table_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/csv_table_test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/csv_table_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/csv_table_tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/rdb_table_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests/rdb_table_test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/rdb_table_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/rdb_table_tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit_tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.rdb_table_tests">
+  <component name="RunManager" selected="Python.csv_table_tests">
     <configuration name="CSVDataTable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="W4111_F19_HW1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,9 +126,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/rdb_table_tests.py" />

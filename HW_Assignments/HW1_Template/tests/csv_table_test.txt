@@ -44,8 +44,8 @@ DEBUG:root:CSVDataTable.__init__: data = {
   "debug": true
 }
 False
-True
 DEBUG:root:CSVDataTable._load: Loaded 19617 rows
+True
 DEBUG:root:CSVDataTable.__init__: data = {
   "table_name": "people",
   "connect_info": {
@@ -80,8 +80,8 @@ DEBUG:root:CSVDataTable.__init__: data = {
   ],
   "debug": true
 }
-{'playerID': 'aardsda01'}
 DEBUG:root:CSVDataTable._load: Loaded 19617 rows
+{'playerID': 'aardsda01'}
 DEBUG:root:CSVDataTable.__init__: data = {
   "table_name": "people",
   "connect_info": {
