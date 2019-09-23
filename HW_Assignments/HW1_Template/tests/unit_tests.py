@@ -5,7 +5,6 @@ from src.CSVDataTable import CSVDataTable
 import logging
 import os
 
-
 # The logging level to use should be an environment variable, not hard coded.
 logging.basicConfig(level=logging.DEBUG)
 
@@ -19,7 +18,6 @@ data_dir = os.path.abspath("../Data/Baseball")
 
 
 def t_load():
-
     connect_info = {
         "directory": data_dir,
         "file_name": "People.csv"
@@ -30,4 +28,5 @@ def t_load():
     print("Created table = " + str(csv_tbl))
 
 
-t_load()
+# t_load()
+

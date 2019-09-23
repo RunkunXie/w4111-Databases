@@ -2,16 +2,19 @@ from src.BaseDataTable import BaseDataTable
 import pymysql
 
 import logging
+
 logger = logging.getLogger()
 
+
 def _get_default_cnx():
-    result = pymysql.connect(host='127.0.0.1',
+    result = pymysql.connect(host="127.0.0.1",
                              user='dbuser',
                              password='dbuserdbuser',
-                             db='lahman2019raw',
+                             db='lahman2019',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
     return result
+
 
 def get_connection(connect_info):
     """
@@ -23,6 +26,7 @@ def get_connection(connect_info):
     cnx = pymysql.connect(**connect_info)
     return cnx
 
+
 def run_q(sql, args=None, fetch=True, cur=None, conn=None, commit=True):
     '''
     Helper function to run an SQL statement.
@@ -31,7 +35,7 @@ def run_q(sql, args=None, fetch=True, cur=None, conn=None, commit=True):
     the connection information. This means that this implementation of run_q MUST NOT try to obtain
     a defailt connection.
 
-    :param sql: SQL template with placeholders for parameters. Canno be NULL.
+    :param sql: SQL template with placeholders for parameters. Cannot be NULL.
     :param args: Values to pass with statement. May be null.
     :param fetch: Execute a fetch and return data if TRUE.
     :param conn: The database connection to use. This cannot be NULL, unless a cursor is passed.
@@ -51,8 +55,8 @@ def run_q(sql, args=None, fetch=True, cur=None, conn=None, commit=True):
     try:
 
         if conn is None:
-            #connection_created = True
-            #conn = _get_default_cnx()
+            # connection_created = True
+            # conn = _get_default_cnx()
             raise ValueError("In this implementation, conn cannot be None.")
 
         if cur is None:
@@ -78,6 +82,6 @@ def run_q(sql, args=None, fetch=True, cur=None, conn=None, commit=True):
             conn.commit()
 
     except Exception as e:
-        raise(e)
+        raise (e)
 
     return (res, data)

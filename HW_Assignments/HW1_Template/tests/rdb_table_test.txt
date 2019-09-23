@@ -1,6 +1,33 @@
-Traceback (most recent call last):
-  File "/Users/vincentxie/Documents/Graduate/2019 Fall/3 Database Sec 2/w4111-Databases-fork/HW_Assignments/HW1_Template/tests/rdb_table_tests.py", line 4, in <module>
-    from src.RDBDataTable import RDBDataTable
-  File "/Users/vincentxie/Documents/Graduate/2019 Fall/3 Database Sec 2/w4111-Databases-fork/HW_Assignments/HW1_Template/src/RDBDataTable.py", line 3, in <module>
-    import src.dbutils as dbutils
-ModuleNotFoundError: No module named 'src.dbutils'
+RDB table =  <src.RDBDataTable.RDBDataTable object at 0x102577b00>
+DEBUG:root:Executing SQL = SELECT  playerID,birthYear,birthMonth  FROM people  WHERE  playerID='aardsda01' AND birthYear='1981' 
+(' WHERE  playerID=%s AND birthYear=%s ', ['aasedo01', '1954'])
+('SELECT  *  FROM people  WHERE  playerID=%s AND birthYear=%s ', ['aasedo01', '1954'])
+(1, [{'playerID': 'aardsda01', 'birthYear': '1981', 'birthMonth': '12'}])
+DEBUG:root:Executing SQL = SELECT  playerID,birthYear,birthMonth  FROM people  WHERE  playerID='aardsda01' 
+DEBUG:root:Executing SQL = select count(*) as count from people
+(1, [{'playerID': 'aardsda01', 'birthYear': '1981', 'birthMonth': '12'}])
+('DELETE FROM people  WHERE  playerID=%s AND birthYear=%s ', ['aasedo01', '1954'])
+DEBUG:root:Executing SQL = DELETE FROM people  WHERE  playerID='aasedo01' AND birthYear='1954' 
+DEBUG:root:Executing SQL = select count(*) as count from people
+1
+DEBUG:root:Executing SQL = select count(*) as count from people
+DEBUG:root:Executing SQL = DELETE FROM people  WHERE  playerID='aasedo01' 
+DEBUG:root:Executing SQL = select count(*) as count from people
+0
+DEBUG:root:Executing SQL = SELECT  *  FROM people  WHERE  playerID='aardsda01' 
+(' SET  playerID=%s AND birthYear=%s ', ['aardsda01', '1981'])
+('UPDATE people SET  birthYear=%s  WHERE  playerID=%s AND birthYear=%s ', ['3000', 'aardsda01', '1981'])
+DEBUG:root:Executing SQL = UPDATE people SET  birthYear='3000'  WHERE  playerID='aardsda01' AND birthYear='1981' 
+(1, [{'playerID': 'aardsda01', 'birthYear': '1981', 'birthMonth': '12', 'birthDay': '27', 'birthCountry': 'USA', 'birthState': 'CO', 'birthCity': 'Denver', 'deathYear': '', 'deathMonth': '', 'deathDay': '', 'deathCountry': '', 'deathState': '', 'deathCity': '', 'nameFirst': 'David', 'nameLast': 'Aardsma', 'nameGiven': 'David Allan', 'weight': '215', 'height': '75', 'bats': 'R', 'throws': 'R', 'debut': '2004-04-06', 'finalGame': '2015-08-23', 'retroID': 'aardd001', 'bbrefID': 'aardsda01'}])
+1
+DEBUG:root:Executing SQL = SELECT  *  FROM people  WHERE  playerID='aardsda01' 
+(1, [{'playerID': 'aardsda01', 'birthYear': '3000', 'birthMonth': '12', 'birthDay': '27', 'birthCountry': 'USA', 'birthState': 'CO', 'birthCity': 'Denver', 'deathYear': '', 'deathMonth': '', 'deathDay': '', 'deathCountry': '', 'deathState': '', 'deathCity': '', 'nameFirst': 'David', 'nameLast': 'Aardsma', 'nameGiven': 'David Allan', 'weight': '215', 'height': '75', 'bats': 'R', 'throws': 'R', 'debut': '2004-04-06', 'finalGame': '2015-08-23', 'retroID': 'aardd001', 'bbrefID': 'aardsda01'}])
+DEBUG:root:Executing SQL = SELECT  *  FROM people  WHERE  playerID='aardsda01' 
+DEBUG:root:Executing SQL = UPDATE people SET  birthYear='4000'  WHERE  playerID='aardsda01' 
+(1, [{'playerID': 'aardsda01', 'birthYear': '3000', 'birthMonth': '12', 'birthDay': '27', 'birthCountry': 'USA', 'birthState': 'CO', 'birthCity': 'Denver', 'deathYear': '', 'deathMonth': '', 'deathDay': '', 'deathCountry': '', 'deathState': '', 'deathCity': '', 'nameFirst': 'David', 'nameLast': 'Aardsma', 'nameGiven': 'David Allan', 'weight': '215', 'height': '75', 'bats': 'R', 'throws': 'R', 'debut': '2004-04-06', 'finalGame': '2015-08-23', 'retroID': 'aardd001', 'bbrefID': 'aardsda01'}])
+1
+DEBUG:root:Executing SQL = SELECT  *  FROM people  WHERE  playerID='aardsda01' 
+(1, [{'playerID': 'aardsda01', 'birthYear': '4000', 'birthMonth': '12', 'birthDay': '27', 'birthCountry': 'USA', 'birthState': 'CO', 'birthCity': 'Denver', 'deathYear': '', 'deathMonth': '', 'deathDay': '', 'deathCountry': '', 'deathState': '', 'deathCity': '', 'nameFirst': 'David', 'nameLast': 'Aardsma', 'nameGiven': 'David Allan', 'weight': '215', 'height': '75', 'bats': 'R', 'throws': 'R', 'debut': '2004-04-06', 'finalGame': '2015-08-23', 'retroID': 'aardd001', 'bbrefID': 'aardsda01'}])
+DEBUG:root:Executing SQL = INSERT INTO people (playerID,birthYear)  VALUES  ('RX2166','4000') 
+DEBUG:root:Executing SQL = SELECT  *  FROM people  WHERE  playerID='RX2166' 
+(1, [{'playerID': 'RX2166', 'birthYear': '4000', 'birthMonth': None, 'birthDay': None, 'birthCountry': None, 'birthState': None, 'birthCity': None, 'deathYear': None, 'deathMonth': None, 'deathDay': None, 'deathCountry': None, 'deathState': None, 'deathCity': None, 'nameFirst': None, 'nameLast': None, 'nameGiven': None, 'weight': None, 'height': None, 'bats': None, 'throws': None, 'debut': None, 'finalGame': None, 'retroID': None, 'bbrefID': None}])
