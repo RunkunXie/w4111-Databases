@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/vincentxie/Documents/Graduate/2019 Fall/3 Database Sec 2/w4111-Databases-fork/HW_Assignments/HW1_Template/tests/rdb_table_tests.py", line 4, in <module>
+    from src.RDBDataTable import RDBDataTable
+  File "/Users/vincentxie/Documents/Graduate/2019 Fall/3 Database Sec 2/w4111-Databases-fork/HW_Assignments/HW1_Template/src/RDBDataTable.py", line 3, in <module>
+    import src.dbutils as dbutils
+ModuleNotFoundError: No module named 'src.dbutils'
