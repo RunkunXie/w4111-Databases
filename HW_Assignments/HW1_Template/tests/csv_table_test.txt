@@ -43,9 +43,9 @@ DEBUG:root:CSVDataTable.__init__: data = {
   "key_columns": null,
   "debug": true
 }
-DEBUG:root:CSVDataTable._load: Loaded 19617 rows
 False
 True
+DEBUG:root:CSVDataTable._load: Loaded 19617 rows
 DEBUG:root:CSVDataTable.__init__: data = {
   "table_name": "people",
   "connect_info": {
